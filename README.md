@@ -1,55 +1,26 @@
-Game 21 (Blackjack)
-The game 21 (or Blackjack) is a popular card game where the goal is to get as close as possible to 21 without going over. In this game, players compete against the dealer (or the "mama").
+# Blackjack Game
 
-Rules of the Game
-Objective of the game: The goal of the game is to have the sum of the values of your cards as close to 21 as possible without going over.
+This is a simple Blackjack game written in Java using the Swing framework for the GUI. The user plays against the "mother" (computer), drawing cards and comparing the scores to determine the winner. The game interface is divided into three sections to show the player's cards, the mother's cards, and the deck of shuffled cards.
 
-Card Values:
+## Features
 
-The numbered cards have their face value (e.g., 2, 3, 4, etc.).
+- **Player vs. Mother**: The user competes against the computer (the "mother").
+- **Deck Management**: Cards are shuffled and drawn from a deck.
+- **Card Display**: Cards are displayed with images for a realistic appearance.
+- **Game Flow**: The player can stop drawing cards, and the game will calculate the winner based on the total score.
 
-The J, Q, and K (face cards) are worth 10.
+## How to Run
 
-The A (Ace) can be worth either 1 or 11, depending on what is more advantageous for the player. However, in this version, the Ace is worth 1 — the 11 option is not available yet.
+1. Clone this repository to your local machine.
+2. Compile and run the program in your Java development environment.
+3. The GUI will open, allowing you to play Blackjack with the computer.
 
-Gameplay:
+## Classes
 
-At the start of the game, the player will receive the first cards.
-
-The player clicks on the face-down card, and with each click, a new card is revealed in front of them.
-
-When the player wants to stop, they press the "stop" button.
-
-After the player stops, it is the dealer's (mama's) turn. The dealer also draws cards using the same steps, stopping when they no longer want a card.
-
-Winner: The winner is the player or the dealer whose hand is closest to 21 without exceeding it.
-
-How to Play the Game
-Start: Open the program and run the game.
-
-Interaction with the Game:
-
-At the beginning of the game, the player will be the first to receive cards.
-
-The player clicks on the face-down card, and with each click, a new card will be revealed.
-
-When the player wants to stop, they press the "stop" button.
-
-After that, it's the dealer's (mama's) turn, and they draw cards in the same way, stopping when they don't want more cards.
-
-Result: Once the player presses "stop," the dealer's (mama's) hand is calculated, and the sum of both players' hands is displayed. A message will appear showing who won.
-
-Technical Information
-The game has been implemented in Java.
-
-The game logic is based on a simple implementation of the classic Blackjack variation.
-
-How to Run the Game
-Clone the repository to your local machine.
-
-Open the project in Eclipse.
-
-Run the Blackjack class to start the game.
-
-Tips
-Be careful with your choices to avoid exceeding 21!
+- **BlackJackGUI**: Handles the main game interface and game flow.
+- **Card**: Represents a single playing card with its type and symbol.
+- **CardFront**: Displays the front side of the card.
+- **CardBack**: Displays the back side of the card.
+- **CardPanel**: A panel to hold the card images.
+- **PlayerPanel**: Displays the player's hand.
+- **Trapoula**: Manages the deck of cards, shuffling, and drawing.
